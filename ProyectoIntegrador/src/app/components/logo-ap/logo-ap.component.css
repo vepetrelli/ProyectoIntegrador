@@ -1,3 +1,46 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.redes{
+    margin-right: 5px;
+}
+.btn{
+    border-width: medium;
+}
 #logoAP{
     width: 150px;
+}
+img{
+    width: 50px;
+}
+#linkedin{
+    margin-right: 5px;
+}
+#github{
+    margin-right: 5px;
+}
+#instagram{
+    margin-right: 5px;
+}
+#facebook{
+    margin-right: 5px;
+}
+#gmail{
+    margin-right: 5px;
+}
+/* para vista de celular */
+@media(max-width: 575px){
+    .container{
+        flex-direction: column;
+    }
+    .redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .redes img{
+        margin: 5px;
+    }
 }
