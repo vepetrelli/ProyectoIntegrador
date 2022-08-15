@@ -10,7 +10,7 @@ import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { HysComponent } from './components/hys/hys.component';
+import { SkillsComponent } from './components/skills/skills.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
 import {HttpClientModule} from '@angular/common/http';
@@ -24,6 +24,8 @@ import { NeweducacionComponent } from './components/educacion/neweducacion.compo
 import { EditeducacionComponent } from './components/educacion/editeducacion.component';
 import { NewproyectosComponent } from './components/proyectos/newproyectos.component';
 import { EditproyectosComponent } from './components/proyectos/editproyectos.component';
+import { NewskillsComponent } from './components/skills/newskills.component';
+import { EditskillsComponent } from './components/skills/editskills.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,7 @@ import { EditproyectosComponent } from './components/proyectos/editproyectos.com
     AcercaDeComponent,
     ExperienciaComponent,
     EducacionComponent,
-    HysComponent,
+    SkillsComponent,
     ProyectosComponent,
     FooterComponent,
     HomeComponent,
@@ -45,6 +47,8 @@ import { EditproyectosComponent } from './components/proyectos/editproyectos.com
     EditeducacionComponent,
     NewproyectosComponent,
     EditproyectosComponent,
+    NewskillsComponent,
+    EditskillsComponent,
   ],
   imports: [
     BrowserModule,
