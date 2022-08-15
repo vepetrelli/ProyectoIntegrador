@@ -13,7 +13,7 @@
                     <td><h2>{{Proyectos.nombreP}}</h2></td>
                     <td>{{Proyectos.descripcionP}}</td>
                     <td>{{Proyectos.anoP}}</td>
-                    <td>{{Proyectos.imgP}}</td>
+                    <td><img src="{{Proyectos.imgP}}"></td>
                     <td *ngIf="isLogged"><button class="btn btn-light" routerLink="/editproy/{{Proyectos.id}}"><i class="bi bi-pencil-fill"></i>EDITAR</button></td>
                     <td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(Proyectos.id)"><i class="bi bi-trash3-fill"></i>BORRAR</button></td>
                 </tr>
