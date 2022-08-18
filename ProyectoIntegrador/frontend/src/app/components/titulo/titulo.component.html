@@ -1,0 +1,25 @@
+<div class="row">
+    <h1>Acerca de</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevo" *ngIf="isLogged">
+            Agregar descripcion
+        </button>
+    </div>
+
+
+    <div class="col-lg-1" ></div>
+    <div class="col-lg-11">
+    <table class="table">
+        <tbody>
+            <tr *ngFor="let Titulo of tit">
+                <td><img src="{{Titulo.img}}" class="img-fluid" id="fotoperfil"></td>
+                <td><p id="profesion">{{Titulo.profesion}}</p></td>
+                <td> <h2 id="descripcion">{{Titulo.descripcion}}</h2></td>
+
+        <td *ngIf="isLogged"><button class="btn btn-light" routerLink="/update/{{Titulo.id}}"><i class="bi bi-pencil-fill"></i>EDITAR</button></td>
+            </tr>
+        </tbody>
+
+    </table>
+    </div>
+    </div>

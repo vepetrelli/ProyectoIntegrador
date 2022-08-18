@@ -1,6 +1,6 @@
 package com.portfolio.portfolio.Entity;
 
-import static javafx.scene.input.KeyCode.G;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -14,14 +14,16 @@ public class Educacion {
     private String nombreE;
     private String descripcionE;
     private String anoE;
+    private String imgE;
 
     public Educacion() {
     }
 
-    public Educacion(String nombreE, String descripcionE, String anoE) {
+    public Educacion(String nombreE, String descripcionE, String anoE, String imgE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
         this.anoE = anoE;
+        this.imgE = imgE;
     }
 
     public int getId() {
@@ -55,6 +57,12 @@ public class Educacion {
     public void setAnoE(String anoE) {
         this.anoE = anoE;
     }
-    
+    public String getImgE() {
+        return imgE;
+    }
+
+    public void setImgE(String imgE) {
+        this.imgE = imgE;
+    }
     
 }

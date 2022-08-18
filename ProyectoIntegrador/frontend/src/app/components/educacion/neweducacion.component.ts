@@ -12,6 +12,7 @@ export class NeweducacionComponent implements OnInit {
   nombreE: string;
   descripcionE: string;
   anoE: string;
+  imgE: string;
 
   constructor(private educacionS: EducacionService, private router: Router) { }
 
@@ -19,7 +20,7 @@ export class NeweducacionComponent implements OnInit {
   }
 
     onCreate():void {
-      const educacion = new Educacion(this.nombreE, this.descripcionE, this.anoE);
+      const educacion = new Educacion(this.nombreE, this.descripcionE, this.anoE, this.imgE);
       this.educacionS.save(educacion).subscribe(
         data => {alert("Educación añadida correctamente");
       this.router.navigate(['']);

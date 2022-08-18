@@ -1,5 +1,7 @@
 package com.portfolio.portfolio.Entity;
 
+package com.portfolio.portfolio.Entity;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
