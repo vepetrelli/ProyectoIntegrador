@@ -1,15 +1,8 @@
 <div class="row">
-    <h1>Acerca de</h1>
-    <div class="col-lg-2">
-        <button type="button" class="btn btn-dark" routerLink="/nuevo" *ngIf="isLogged">
-            Agregar descripcion
-        </button>
-    </div>
-
-
+    <h1>Acerca de mí</h1>
     <div class="col-lg-1" ></div>
     <div class="col-lg-11">
-    <table class="table">
+    <table class="table table-borderless">
         <tbody>
             <tr *ngFor="let Titulo of tit">
                 <td><img src="{{Titulo.img}}" class="img-fluid" id="fotoperfil"></td>
@@ -22,4 +15,4 @@
 
     </table>
     </div>
-    </div>
+</div>

@@ -1,8 +1,16 @@
+.row{
+    background-color: #ede9e9;
+    position:fixed;
+    width: 103%;
+}
 .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 10px;
+    padding-right: 30px;
 }
+
 .redes{
     margin-right: 5px;
 }

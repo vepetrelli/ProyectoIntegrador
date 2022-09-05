@@ -5,7 +5,7 @@
           Agregar Skill
       </button>
   </div>
-    <div class="text-center col-sm-4 col-md-4 col-lg-4" *ngFor="let Skills of ski">
+    <div class="text-center col-sm-3 col-md-3 col-lg-3" *ngFor="let Skills of ski">
         <circle-progress 
         [percent]="Skills.porcentajeS"
         [radius]="100"
@@ -14,14 +14,15 @@
         [imageHeight]="50"
         [imageWidth]="50"
         [title]="Skills.nombreS"
+        [showTitle]="true"
         [titleColor]="'black'"
         [titleFontSize]="'50px'"
-        [showSubtitle]="true"
-        [showUnits]="true"
+        [showSubtitle]="false"
+        [showUnits]="false"
         [outerStrokeWidth]="16"
-        [innerStrokeWidth]="8"
-        [outerStrokeColor]="'#78C000'"
-        [innerStrokeColor]="'#C7E596'"
+        [innerStrokeWidth]="3"
+        [outerStrokeColor]="'#56b72d'"
+        [innerStrokeColor]="'black'"
         [animation]="true"
         [animationDuration]="600"
       ></circle-progress>
