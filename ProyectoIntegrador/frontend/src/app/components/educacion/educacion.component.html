@@ -10,10 +10,10 @@
     <table class="table">
         <tbody>
             <tr *ngFor="let Educacion of edu">
-                <td><h2>{{Educacion.nombreE}}</h2></td>
+                <td><h4>{{Educacion.nombreE}}</h4></td>
                 <td>{{Educacion.descripcionE}}</td>
                 <td>{{Educacion.anoE}}</td>
-                <td><img src="{{Educacion.imgE}}"></td>
+                <td><img src="{{Educacion.imgE}}" style="width:10vw; height:15vh; border-radius: 25%;"></td>
                 <div id="botones">
                 <td *ngIf="isLogged"><button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}"><i class="bi bi-pencil-fill"></i>EDITAR</button></td>
                 <td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(Educacion.id)"><i class="bi bi-trash3-fill"></i>BORRAR</button></td>

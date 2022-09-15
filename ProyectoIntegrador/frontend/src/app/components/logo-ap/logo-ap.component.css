@@ -40,6 +40,9 @@ img{
 }
 /* para vista de celular */
 @media(max-width: 575px){
+    .row{
+        position: relative;
+    }
     .container{
         flex-direction: column;
     }

@@ -11,10 +11,10 @@
     <table class="table">
         <tbody>
             <tr *ngFor="let Experiencia of expe">
-                <td><h2>{{Experiencia.nombreE}}</h2></td>
+                <td><h4>{{Experiencia.nombreE}}</h4></td>
                 <td>{{Experiencia.descripcionE}}</td>
                 <td>{{Experiencia.anoE}}</td>
-                <td><img src="{{Experiencia.imgE}}"></td>
+                <td><img src="{{Experiencia.imgE}}" style="width:10vw; height:15vh; border-radius: 25%;"></td>
                 <div id="botones">
                 <td  *ngIf="isLogged"><button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil-fill"></i>EDITAR</button></td>
                 <td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(Experiencia.id)"><i class="bi bi-trash3-fill"></i>BORRAR</button></td>

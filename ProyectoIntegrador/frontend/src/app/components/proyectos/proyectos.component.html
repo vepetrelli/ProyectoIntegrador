@@ -1,6 +1,6 @@
 <div class="row">
     <h1>Proyectos realizados</h1>
-    <div class="col-lg-2">
+    <div class="col-lg-6">
             <button type="button" class="btn btn-dark" routerLink="/nuevoproy" *ngIf="isLogged">
                 Agregar Proyecto
             </button>
@@ -8,7 +8,7 @@
 
         <div class="content justify-content-center">
             <div class="card" *ngFor="let Proyectos of proy">
-                <div class="pic"><img class="img-fluid" src="{{Proyectos.imgP}}"></div>
+                <img src="{{Proyectos.imgP}}" style="width:100wh; height: 40vh">
                     <p class="content"><h2>{{Proyectos.nombreP}}</h2>
                     <p><i class="content"></i>{{Proyectos.descripcionP}}</p>
                     <p><i class="content"></i>{{Proyectos.anoP}}</p>

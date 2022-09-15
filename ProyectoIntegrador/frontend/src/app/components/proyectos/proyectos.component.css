@@ -6,6 +6,9 @@
 .content{
     display:inline-flex;
     align-items:center;
+    padding: 10px;
+    text-align: left;
+    margin-left: 5px;
 }
 
 .card{
@@ -14,13 +17,9 @@
      border-color: black;
      display: inline-flex;
      margin: 20px;
+     size:20px;
+     position:static;
 }
 .img{
     box-shadow: 10px 10px 30px grey;
-    float:right;
-}
-.content{
-	padding: 10px;
-    text-align: left;
-    margin-left: 5px;
 }

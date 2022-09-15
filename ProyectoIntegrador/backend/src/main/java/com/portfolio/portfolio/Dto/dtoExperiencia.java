@@ -9,7 +9,7 @@ private String nombreE;
 @NotBlank
 private String descripcionE;
 @NotBlank
-private int anoE;
+private String anoE;
 @NotBlank
 private String imgE;
 
@@ -18,7 +18,7 @@ private String imgE;
     public dtoExperiencia() {
     }
 
-    public dtoExperiencia(String nombreE, String descripcionE, int anoE, String imgE) {
+    public dtoExperiencia(String nombreE, String descripcionE, String anoE, String imgE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
         this.anoE = anoE;
@@ -42,11 +42,11 @@ private String imgE;
         this.descripcionE = descripcionE;
     }
 
-    public int getAnoE() {
+    public String getAnoE() {
         return anoE;
     }
 
-    public void setAnoE(int anoE) {
+    public void setAnoE(String anoE) {
         this.anoE = anoE;
     }
     public String getImgE() {

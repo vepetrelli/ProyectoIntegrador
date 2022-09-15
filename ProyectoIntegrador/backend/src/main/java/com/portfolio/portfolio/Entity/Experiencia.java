@@ -13,7 +13,7 @@ public class Experiencia{
     private int id;
     private String nombreE;
     private String descripcionE;
-    private int anoE;
+    private String anoE;
     private String imgE;
     
     //constructores
@@ -21,7 +21,7 @@ public class Experiencia{
     public Experiencia() {
     }
 
-    public Experiencia(String nombreE, String descripcionE, int anoE, String imgE) {
+    public Experiencia(String nombreE, String descripcionE, String anoE, String imgE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
         this.anoE = anoE;
@@ -53,11 +53,11 @@ public class Experiencia{
         this.descripcionE = descripcionE;
     }
 
-    public int getAnoE() {
+    public String getAnoE() {
         return anoE;
     }
 
-    public void setAnoE(int anoE) {
+    public void setAnoE(String anoE) {
         this.anoE = anoE;
     }
       public String getImgE() {
