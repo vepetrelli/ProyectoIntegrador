@@ -15,15 +15,13 @@ import org.springframework.security.core.userdetails.UserDetails;
  */
 public class UsuarioPrincipal implements UserDetails {
 
-    private String nombre;
     private String nombreUsuario;
     private String email;
     private String password;
     private Collection<? extends GrantedAuthority> authorities;
 
     //Constructor
-    public UsuarioPrincipal(String nombre, String nombreUsuario, String email, String password, Collection<? extends GrantedAuthority> authorities) {
-        this.nombre = nombre;
+    public UsuarioPrincipal(String nombreUsuario, String email, String password, Collection<? extends GrantedAuthority> authorities) {
         this.nombreUsuario = nombreUsuario;
         this.email = email;
         this.password = password;
@@ -34,7 +32,7 @@ public class UsuarioPrincipal implements UserDetails {
         List<GrantedAuthority> authorities = usuario.getRoles().stream()
                 .map(rol -> new SimpleGrantedAuthority(rol.getRolNombre().name())).collect(Collectors
                 .toList());
-        return new UsuarioPrincipal(usuario.getNombre(), usuario.getNombreUsuario(), usuario.getEmail(),
+        return new UsuarioPrincipal(usuario.getNombreUsuario(), usuario.getEmail(),
                  usuario.getPassword(), authorities);
     }
 
@@ -48,16 +46,11 @@ public class UsuarioPrincipal implements UserDetails {
         return password;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
     public String getEmail() {
         return email;
     }
 
-    @Override
-    public String getUsername() {
+    public String getNombreUsuario() {
         return nombreUsuario;
     }
 
@@ -79,6 +72,11 @@ public class UsuarioPrincipal implements UserDetails {
     @Override
     public boolean isEnabled() {
         return true;
+    }
+
+    @Override
+    public String getUsername() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
 }
